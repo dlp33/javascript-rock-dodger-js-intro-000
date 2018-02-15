@@ -121,6 +121,18 @@ function moveDodger(e) {
 }
 
 function moveDodgerLeft() {
+  
+
+  requestAnimationFrame(function(timestamp){
+    if(dodgerLeftEdge > 0) {
+      DODGER.style.left = `${dodgerLeftEdge - 4}px`;      
+    }
+
+})
+
+  
+  // window.requestAnimationFrame() ???
+
   // implement me!
   /**
    * This function should move DODGER to the left
@@ -129,6 +141,17 @@ function moveDodgerLeft() {
 }
 
 function moveDodgerRight() {
+
+  requestAnimationFrame(function(timestamp){
+    if(dodgerLeftEdge < 360) {
+      DODGER.style.left = `${dodgerLeftEdge + 4}px`
+    }
+  })     
+
+  // Should we only adjust the leftEdge? 
+
+
+
   // implement me!
   /**
    * This function should move DODGER to the right
