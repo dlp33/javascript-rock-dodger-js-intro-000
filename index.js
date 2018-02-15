@@ -127,7 +127,7 @@ function endGame() {
 
 
 
-  ROCKS.splice(0, ROCKS.length);
+  //ROCKS.splice(0, ROCKS.length);
   window.removeEventListener('keydown', moveDodger);
   alert('YOU LOSE!');
 }
