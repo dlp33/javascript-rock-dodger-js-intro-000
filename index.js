@@ -102,8 +102,8 @@ function createRock(x) {
 
 //if(positionOfRock < GAME_HEIGHT) {
 
- 
-const myInterval = setInterval(moveRock, 2000)
+
+const myInterval = setInterval(moveRock, 500)
 //}
 
   // Add the rock to ROCKS so that we can remove all rocks
