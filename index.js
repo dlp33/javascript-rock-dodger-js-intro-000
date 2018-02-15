@@ -92,7 +92,6 @@ function createRock(x) {
 
 // Removing the rock from the DOM
      if(topPostionOfRock === 400){
-       console.log('removed!');
        rock.remove();
      }
 
@@ -121,7 +120,7 @@ const myInterval = setInterval(moveRock, 500)
  */
 function endGame() {
   clearInterval(gameInterval);
-  cancelAnimationFrame(moveRock);
+  //cancelAnimationFrame(moveRock);
   ROCKS.splice(0, ROCKS.length);
   window.removeEventListener('keydown', moveDodger);
   alert('YOU LOSE!');
