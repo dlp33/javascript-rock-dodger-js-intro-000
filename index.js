@@ -95,11 +95,12 @@ function createRock(x) {
 
      var topPostionOfRock = positionToInteger(rock.style.top);
 
-     if(topPostionOfRock === 400){
-       console.log('ahhhhhhhhhhhhhhhhhhh!')
+     if(topPostionOfRock === 300){
+       console.log('removed!');
+       rock.remove();
      }
 
-     
+
        rock.style.top = `${topPostionOfRock + 4}px`;
 
   } // end of moveRock function
