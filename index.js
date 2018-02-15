@@ -97,7 +97,7 @@ function createRock(x) {
      }
 
 // Moving the rock down 4px at a time.
-       rock.style.top = `${topPostionOfRock + 4}px`;
+       rock.style.top = `${topPostionOfRock + 8}px`;
 
   } // end of moveRock function
 
