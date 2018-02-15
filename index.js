@@ -129,7 +129,7 @@ function endGame() {
 
   ROCKS.splice(0, ROCKS.length);
   window.removeEventListener('keydown', moveDodger);
-  console.log('YOU LOSE!');
+  alert('YOU LOSE!');
 }
 
 function moveDodger(e) {
