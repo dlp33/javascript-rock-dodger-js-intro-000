@@ -68,7 +68,7 @@ function createRock(x) {
    */
 
    GAME.appendChild(rock);
-   moveRock();
+   window.requestAnimationFrame(moveRock);
 
 
   /**
