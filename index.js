@@ -126,6 +126,8 @@ function moveDodger(e) {
 
 function moveDodgerLeft() {
 
+  var dodgerLeftEdge = positionToInteger(DODGER.style.left)
+
 
   requestAnimationFrame(function(timestamp){
     if(dodgerLeftEdge > 0) {
