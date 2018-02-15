@@ -100,9 +100,9 @@ function createRock(x) {
 
   // We should kick of the animation of the rock around here
 
-if(positionOfRock < GAME_HEIGHT) {
+//if(positionOfRock < GAME_HEIGHT) {
   window.requestAnimationFrame(moveRock)
-}
+//}
 
   // Add the rock to ROCKS so that we can remove all rocks
   // when there's a collision
