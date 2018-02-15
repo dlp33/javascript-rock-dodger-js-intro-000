@@ -121,16 +121,16 @@ function moveDodger(e) {
 }
 
 function moveDodgerLeft() {
-  
+
 
   requestAnimationFrame(function(timestamp){
     if(dodgerLeftEdge > 0) {
-      DODGER.style.left = `${dodgerLeftEdge - 4}px`;      
+      DODGER.style.left = `${dodgerLeftEdge - 4}px`;
     }
 
 })
 
-  
+
   // window.requestAnimationFrame() ???
 
   // implement me!
@@ -148,7 +148,7 @@ function moveDodgerRight() {
     }
   })     
 
-  // Should we only adjust the leftEdge? 
+  // Should we only adjust the leftEdge?
 
 
 
