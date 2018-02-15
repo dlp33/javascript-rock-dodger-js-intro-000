@@ -101,7 +101,9 @@ function createRock(x) {
   // We should kick of the animation of the rock around here
 
 //if(positionOfRock < GAME_HEIGHT) {
-  window.requestAnimationFrame(moveRock)
+
+ 
+const myInterval = setInterval(moveRock, 2000)
 //}
 
   // Add the rock to ROCKS so that we can remove all rocks
