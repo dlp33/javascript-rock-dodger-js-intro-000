@@ -93,12 +93,16 @@ function createRock(x) {
      * we should remove the rock from the DOM
      */
 
-     if(rock.style.top < GAME_HEIGHT) {
-       rock.style.top += 2 + 'px';
-     }
-  }
+     var topPostionOfRock = positionToInteger(rock.style.top);
+       rock.style.top = `${topPostionOfRock + 2}px`;
+
+  } // end of moveRock function
 
   // We should kick of the animation of the rock around here
+
+if(positionOfRock < GAME_HEIGHT) {
+  window.requestAnimationFrame(moveRock)
+}
 
   // Add the rock to ROCKS so that we can remove all rocks
   // when there's a collision
