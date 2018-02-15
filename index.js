@@ -94,7 +94,7 @@ function createRock(x) {
      */
 
      var topPostionOfRock = positionToInteger(rock.style.top);
-       rock.style.top = `${topPostionOfRock + 2}px`;
+       rock.style.top = `${topPostionOfRock + 4}px`;
 
   } // end of moveRock function
 
