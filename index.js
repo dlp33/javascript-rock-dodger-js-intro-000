@@ -123,7 +123,7 @@ function endGame() {
   //cancelAnimationFrame(moveRock);
   ROCKS.splice(0, ROCKS.length);
   window.removeEventListener('keydown', moveDodger);
-  alert('YOU LOSE!');
+  console.log('YOU LOSE!');
 }
 
 function moveDodger(e) {
