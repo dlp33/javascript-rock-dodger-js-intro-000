@@ -147,7 +147,7 @@ function moveDodgerRight() {
     if(dodgerLeftEdge < 360) {
       DODGER.style.left = `${dodgerLeftEdge + 4}px`
     }
-  })     
+  })
 
   // Should we only adjust the leftEdge?
 
