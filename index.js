@@ -120,7 +120,7 @@ const myInterval = setInterval(moveRock, 500)
  */
 function endGame() {
   clearInterval(gameInterval);
-  cancelAnimationFrame();
+  rock.remove();
   ROCKS.splice(0, ROCKS.length);
   window.removeEventListener('keydown', moveDodger);
   console.log('YOU LOSE!');
