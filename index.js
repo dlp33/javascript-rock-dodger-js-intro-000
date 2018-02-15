@@ -120,7 +120,7 @@ const myInterval = setInterval(moveRock, 500)
  * Finally, alert "YOU LOSE!" to the player.
  */
 function endGame() {
-  gameInterval = null;
+  clearInterval(gameInterval);
   ROCKS.splice(0, ROCKS.length);
   window.removeEventListener('keydown', moveDodger);
   alert('YOU LOSE!');
